@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {"src/test/resources/features/comprar_producto.feature"},
         glue = {"co.com.falabella.setup", "co.com.falabella.stepdefinitions"},
-        snippets = SnippetType.CAMELCASE, tags = "")
+        snippets = SnippetType.CAMELCASE, tags = "@Comprar")
 public class Falabella {
 }

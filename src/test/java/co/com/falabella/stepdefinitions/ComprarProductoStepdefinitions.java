@@ -4,13 +4,14 @@ import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actors.OnStage;
+
+import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class ComprarProductoStepdefinitions {
 
     @Dado("^que el cliente se encuentra en el sitio web$")
     public void queElClienteSeEncuentraEnElSitioWeb() {
-        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url(""));
+        theActorInTheSpotlight().wasAbleTo(Open.url("https://www.falabella.com.co/falabella-co"));
     }
 
 
