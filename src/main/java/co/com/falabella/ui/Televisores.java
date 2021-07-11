@@ -8,8 +8,8 @@ public class Televisores {
     private Televisores() {
     }
 
-    public static final Target TAMANO_TV = Target.the("Selecciona tamaño")
-            .locatedBy("//*[@class=’uxc-huincha-item uxc-huincha-circle-opacity9 uxc-huincha-circle-fondo’][5]");
+    public static final Target TAMANO_TV = Target.the("Selecciona tamaño {0}")
+            .locatedBy("//*[@class='uxc-huincha-item uxc-huincha-circle-opacity9 uxc-huincha-circle-fondo'][{0}]");
 
     public static final Target MENU_MARCA = Target.the("Desplegar Marcas")
             .located(By.id("testId-Accordion-Marca"));
@@ -18,7 +18,7 @@ public class Televisores {
             .located(By.id("testId-Multiselect-Marca"));
 
     public static final Target CHECK_MARCA = Target.the("Check marca")
-            .locatedBy("//li[@class='jsx-53718149']//input[contains(@id,'LG-')]");
+            .locatedBy("(//li[@class='jsx-53718149']//input[contains(@id,'LG-')])[{0}]");
 
     public static final Target RESULTADOS = Target.the("Resultados")
             .locatedBy("//*[@data-pod='catalyst-pod']");

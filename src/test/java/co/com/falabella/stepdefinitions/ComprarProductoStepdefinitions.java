@@ -1,8 +1,11 @@
 package co.com.falabella.stepdefinitions;
 
-import cucumber.api.java.es.Cuando;
-import cucumber.api.java.es.Dado;
-import cucumber.api.java.es.Entonces;
+import co.com.falabella.models.Producto;
+import co.com.falabella.tasks.Agregar;
+import co.com.falabella.tasks.SeleccionaCategoria;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Dado;
+import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.actors.OnStage.*;
@@ -16,8 +19,8 @@ public class ComprarProductoStepdefinitions {
 
 
     @Cuando("^agrega el producto a la canasta de compra$")
-    public void agregaElProductoALaCanastaDeCompra() {
-
+    public void agregaElProductoALaCanastaDeCompra(Producto producto) {
+        theActorInTheSpotlight().attemptsTo(Agregar.televisor(producto));
     }
 
     @Entonces("^se encontrara en la pagina de pagos \"([^\"]*)\"$")

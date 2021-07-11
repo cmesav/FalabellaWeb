@@ -17,11 +17,11 @@ public class PaginaInicial {
     public static final Target CATEGORIAS = Target.the("Menu categorias")
             .located(By.id("testId-HamburgerBtn-toggle"));
 
-    public static final Target CATEGORIA = Target.the("Selecciona categoria")
-            .locatedBy("//p[contains(text(),'Tecnología')]");
+    public static final Target CATEGORIA = Target.the("Selecciona categoria {0}")
+            .locatedBy("//p[contains(text(),'{0}')]");
 
-    public static final Target TIPO_PRODUCTO = Target.the("Selecciona producto")
-            .locatedBy("//*[@id='testId-ThirdLevelMenu-link'][contains(text(),'Televisores')]");
+    public static final Target TIPO_PRODUCTO = Target.the("Selecciona producto {0}")
+            .locatedBy("//*[@id='testId-ThirdLevelMenu-link'][contains(text(),'{0}')]");
 
 
 }
