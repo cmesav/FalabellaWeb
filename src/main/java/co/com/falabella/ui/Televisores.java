@@ -24,10 +24,10 @@ public class Televisores {
             .locatedBy("//*[@data-pod='catalyst-pod']");
 
     public static final Target TITULO_PRODUCTO = Target.the("Titulo Producto")
-            .locatedBy("//*[@data-pod='catalyst-pod']//b[contains(@id,'displaySubTitle')]");
+            .locatedBy("(//*[@data-pod='catalyst-pod']//b[contains(@id,'displaySubTitle')])[{0}]");
 
     public static final Target AGREGAR_BOLSA= Target.the("Boton agregar a la bolsa")
-            .locatedBy("(//*[@data-pod='catalyst-pod']//button[contains(@id,'action')])[1]");
+            .locatedBy("(//*[@data-pod='catalyst-pod']//button[contains(@id,'action')])[{0}]");
 
     public static final Target BOTON_VER_BOLSA= Target.the("Ver Bolsa")
             .located(By.id("linkButton"));

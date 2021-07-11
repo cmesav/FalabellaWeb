@@ -9,10 +9,10 @@ public class MetodoDePago {
     }
 
     public static final Target TITULO = Target.the("Titulo pagina")
-            .located(By.className("fbra_paymentOptionsTitle__heading__payment"));
+            .locatedBy("//*[@class='fbra_paymentOptionsTitle__heading__payment']");
 
-    public static final Target MONTO_PAGAR = Target.the("Direccion")
-            .located(By.className("fbra_text fbra_test_orderSummary__totalCostPrice fbra_orderSummary__totalCostPrice"));
+    public static final Target MONTO_PAGAR = Target.the("DireccionEnvio")
+            .locatedBy("//*[@class='fbra_text fbra_test_orderSummary__totalCostPrice fbra_orderSummary__totalCostPrice']");
 
 
 }
