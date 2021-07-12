@@ -30,7 +30,6 @@ public class Elegir implements Task {
                 Click.on(Televisores.CHECK_MARCA.of("1")),
                 WaitUntil.the(Televisores.AGREGAR_BOLSA.of("1"), WebElementStateMatchers.isVisible())
         );
-
         for (int i = 1; i <= Televisores.RESULTADOS.resolveAllFor(actor).size(); i++) {
             if (Televisores.TITULO_PRODUCTO.of(String.valueOf(i)).resolveFor(actor).getText()
                     .contains(producto.getMarca() + " " + producto.getTamano())) {
@@ -46,7 +45,6 @@ public class Elegir implements Task {
                 break;
             }
         }
-        System.out.println("se supone que agrego a la bolsa");
     }
 
     public static Elegir televisor(Producto producto) {

@@ -29,7 +29,6 @@ public class Ingresar implements Task {
                 WaitUntil.the(CheckOut.CONTINUAR, WebElementStateMatchers.isClickable())
                         .then(Click.on(CheckOut.CONTINUAR))
         );
-        System.out.println("pasamos departamento");
         actor.attemptsTo(
                 Enter.theValue(direccionEnvio.getDireccion()).into(Despacho.DIRECCION),
                 Enter.theValue(direccionEnvio.getComplementoDireccion()).into(Despacho.DIRECCION_ADICIONAL),
@@ -37,7 +36,6 @@ public class Ingresar implements Task {
                 WaitUntil.the(Despacho.BOTON_CONTINUAR, WebElementStateMatchers.isClickable())
                         .then(Click.on(Despacho.BOTON_CONTINUAR))
         );
-        System.out.println("pantalla pagos");
 
     }
 

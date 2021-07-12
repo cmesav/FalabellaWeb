@@ -12,7 +12,7 @@ Característica: yo como usuario del sitio web de falabella
   Escenario: Comprar articulo
     Cuando agrega el producto a la canasta de compra
       | categoria  | tipoProducto | marca | tamano |
-      | Tecnología | Televisores  | LG    | 70     |
+      | Tecnología | Televisores  | LG    | 82     |
     Y ingresa los datos de envio
       | departamento | ciudad   | direccion       | complementoDireccion |
       | Antioquia    | Medellin | Calle falsa 123 | casa                 |
