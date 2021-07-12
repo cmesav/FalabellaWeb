@@ -11,10 +11,10 @@ public class CheckOut {
     public static final Target EMAIL= Target.the("Campo email")
             .located(By.id("'emailAddress'"));
 
-    public static final Target BOTON_CONTINUAR = Target.the("Boton continuar")
+    public static final Target F_BTN_CONTINUAR = Target.the("Boton continuar")
             .locatedBy("//button[contains(@class,'submitButton')]");
 
-    public static final Target REGION = Target.the("Departamento")
+    public static final Target DEPARTAMENTO = Target.the("Departamento")
             .located(By.id("region"));
 
     public static final Target CIUDAD = Target.the("Ciudad")
@@ -24,7 +24,7 @@ public class CheckOut {
             .located(By.id("comuna"));
 
     public static final Target CONTINUAR = Target.the("Boton Continuar")
-            .located(By.className("fbra_button fbra_test_button fbra_formItem__field04"));
+            .locatedBy("//*[@class='fbra_button fbra_test_button fbra_formItem__field04']");
 
 
 }
