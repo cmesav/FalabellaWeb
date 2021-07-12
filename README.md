@@ -54,6 +54,10 @@ Para correr la automatización se ejecuta el siguiente comando:
 
 * gradle clean test
 
+# Ejecucion en pipeline
+Se incluye en la raiz del proyecto el archivo "azure-pipelines.yml" con la base para ejecucion del proyecto en un 
+pipeline de azure.
+
 # Evidencias
 - Las evidencias generadas quedan alamacenadas en la siguiente ruta dentro dela carpeta del proyecto:
 - \target\site\serenity
