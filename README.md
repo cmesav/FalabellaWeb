@@ -1,5 +1,5 @@
-# PruebaSiste
-Este proyecto fue generado para la prueba tecnica de ingreso a SisteCredito.
+# Introduccion
+En este proyecto se realiza un escenario en el cual se agrega un producto al carrito y se lleva hasta el flujo de pago.
 
 # Configuracion
 
